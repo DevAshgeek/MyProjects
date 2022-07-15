@@ -1,0 +1,22 @@
+body {
+    background: rgb(135,224,221);
+    background: linear-gradient(90deg, rgba(135,224,221,1) 5%, rgba(191,170,192,1) 57%, rgba(62,0,255,1) 89%); 
+
+}
+
+.col-md-6 {
+    border: 7px solid black;
+    margin-top: 150px !important;
+    padding: 20px;
+
+}
+
+button {
+    margin: 20 !important;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+h1 {
+    font-weight: bolder !important;
+    margin: 20px !important;
+}
