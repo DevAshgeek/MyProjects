@@ -1,0 +1,49 @@
+body {
+    background-color: #E4E4E1;
+    background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+    background-blend-mode: normal, multiply;
+        
+}
+.col-md-5 {
+    margin-top: 150px !important;
+    padding: 20px;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+    border-radius: 20px;
+}
+
+input {
+    margin-top: 20px !important;
+
+}
+button {
+    margin-top: 20px !important; 
+}
+.success {
+    border:4px solid green !important;
+}
+
+.error {
+    border: 4px solid red !important;
+}
+
+small {
+    font-weight: bold;
+    margin: 5px;
+    text-align: left;
+}
+h1 {
+    text-align: center;
+    color: rgb(175, 7, 242) !important;
+}
+
+.txtsuccess {
+    color: green !important;
+}
+
+.txterror {
+    color: red !important;
+}
+.txt {
+    color: red !important;
+}
+
