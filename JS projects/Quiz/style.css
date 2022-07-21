@@ -1,0 +1,23 @@
+body {
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+.col-md-7{
+    margin-top: 150px !important;
+    background-color: rgb(115, 236, 250) !important;
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+h1 {
+    background-color: crimson;
+}
+
+input, label {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
