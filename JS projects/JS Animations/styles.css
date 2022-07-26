@@ -1,0 +1,19 @@
+body {
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+}
+
+h1 {
+    margin-top: 50px !important;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bolder !important;
+}
+
+img {
+    height: 300px !important;
+    display: unset !important;
+    display:inline !important;
+    border-radius: 20px !important;
+    width: 100%;
+}
