@@ -17,3 +17,11 @@ img {
     border-radius: 20px !important;
     width: 100%;
 }
+img:hover {
+    height: 300px !important;
+    border: 3px solid white;
+    display: unset !important;
+    display:inline !important;
+    border-radius: 20px !important;
+    width: 100%;
+}
