@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Handling</title>
+
+</head>
+<body>
+    <h1 id="heading">CSS dom props</h1>
+    <h2 id="topic1">This is h2 tag</h2>
+    <p id="para1" onmouseover="hoverme()">Paragraph1 </p>
+    
+    <label for="n1" id="n1lbl">text:</label>
+    <div id="n1div">
+       <input type="text" name="name" id="n1" onchange="displayval()">
+       <button id="btn1" onclick="submit1()">Click</button>
+       <br>
+       <small id="n1sm"></small>
+    </div>
+
+    <br><br>
+    <div id="middiv">
+        <h3 id="h3id1">Creating new ELements using javascript</h3>
+
+        <div id="enddiv">
+            <h3 id="h3id2"> Deleting this h3</h3>
+            <h3 id="h3id3"> Not deleting this one</h3>
+        </div>
+    </div>
+       
+    <style>
+        #n1div{
+        display: inline;
+       }
+    </style>
+
+    <br><br><br><br>
+    
+
+
+    <form action="" id="form1">
+        <label for="nameid" id="namelbl">Name:</label>
+        <input type="text" name="name value" id="nameid" placeholder="enter text">
+        <br>
+
+        <label for="user email" id="emaillbl">Email:</label>
+        <input type="email" name="user email" id="emailid">       
+        <br>
+
+        <label for="age" id="agelbl">Age:</label>
+        <input type="number" name="age" id="ageid">
+        <br>
+        
+        <!-- <input type="submit" name="send" id="send-button" style="display: none"> -->
+    </form>
+
+    <button id="s1" onclick="submitval()">Submit</button>
+    <p id="namep"></p>
+    <p id="emailp"></p>
+    <p id="agep"></p>
+</body>
+</html>
+
+
+<script>
+
+    
+    var para1 = document.getElementById('para1')
+    para1.style.width='150px'
+    var n1 = document.getElementById('n1')
+    var n1sm = document.getElementById('n1sm')
+    var btn1 =document.getElementById('btn1')
+
+    var middiv = document.getElementById('middiv')
+    var h31 = document.getElementById('h3id1')
+    var h32 = document.getElementById('h3id2')
+
+
+    var newh3 = document.createElement('h3')
+    var newh3text = document.createTextNode('This is newly created child')
+
+    //appending text node to h3
+    newh3.appendChild(newh3text)
+
+    //appending newh3 to middiv
+    middiv.appendChild(newh3)
+
+    newh3.setAttribute('className','newh3c')
+    newh3.setAttribute('id','h3c')
+
+    middiv.removeChild(h31)
+    h32.remove()
+    
+    hoverme = function(e){
+      para1.style.textShadow='5px'
+      para1.style.textAlign='center'
+    }
+    function submit1(){
+
+       btn1.style.border='5px solid green'
+    }
+    displayval = function(e){
+      var newv=document.createTextNode(n1.value)
+      n1sm.innerHTML=''
+      n1sm.append(newv)
+      n1.style.border='7px solid black'
+    }
+
+
+
+
+
+//form1    
+
+
+    //getting value of input fields
+    // const name = document.getElementById('nameid').value
+    // const age = document.getElementById('ageid').value
+    // const email = document.getElementById('emailid').value
+
+    // var submit1 =document.getElementById('submit1')
+    // submit1.onclick = clicked
+    
+    var namedisp = document.getElementById('namep')
+    var agedisp = document.getElementById('agep')
+    var emaildisp = document.getElementById('emailp')
+
+   
+
+   
+
+    function submitval(){
+        namedisp.innerHTML=document.getElementById('nameid').value
+        emaildisp.innerHTML=document.getElementById('emailid').value
+        agedisp.innerHTML=document.getElementById('ageid').value
+        // namedisp.append(name)
+    }
+   
+</script>

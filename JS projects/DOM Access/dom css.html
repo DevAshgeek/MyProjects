@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CSS</title>
+    <style>
+        h1{
+            color:cornflowerblue;
+        }
+        h2 {
+            color: tomato;
+        }
+        p {
+            color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+        <h1 id="heading">CSS dom props</h1>
+        <h2 id="topic1">This is h2 tag</h2>
+        <p id="para1">Paragraph1 </p>
+        <button onclick="change()" id="btn1">Click to change</button>
+        
+    </div>
+   
+</body>
+</html>
+
+<script>
+    var heading = document.getElementById('heading')
+    var topic1 = document.getElementById('topic1')
+    var maindiv = document.getElementById('maindiv')
+    heading.style.backgroundColor='grey'
+    topic1.style.textAlign="right"
+    document.getElementById('para1').style.color='green'
+    function change(e){
+        var newh1 = document.getElementById('heading')
+        var newtopic = document.getElementById('topic1')
+        newh1.innerHTML='CSS DOM controlling'
+        newtopic.style.textAlign='center'
+        newtopic.style.color='darkblue'
+        
+
+    }
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Access IN JS</title>
+</head>
+<body>
+    <h1 id="introtxt">This is JS totorial</h1>
+    <p class="para">
+    Lets talk about the JavaScrpt
+    </p>
+    <p class="para">
+        Javascript is a Object based language
+        </p>
+        <input type="text" id="in1" name="input1" >
+    <p class="para">
+
+    </p>
+</body>
+</html>
+
+<script>
+     var hid = document.getElementById('introtxt')
+     hid.innerHTML='This h1 tag is accessed and modified'
+     var para = document.getElementsByClassName('para')
+     para[0].innerHTML='Javascript important ponts'
+     para[0].style.color='blue'
+     para[1].style.color='red'
+     var inp1 = document.getElementById('in1')
+     inp1.setAttribute("name","enter text")
+     var pp = document.getElementsByTagName('p')
+     pp[2].innerHTML='JavaScript is used to control the html request and response of browser on a webpage'
+</script>
